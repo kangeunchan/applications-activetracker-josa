@@ -1,4 +1,4 @@
-#import "../interface/ActiveApplicationInfo.h"
+#import "../interface/ActiveApplicationInfoInterface.h"
 #import <Cocoa/Cocoa.h>
 
 @implementation ActiveApplicationInfo

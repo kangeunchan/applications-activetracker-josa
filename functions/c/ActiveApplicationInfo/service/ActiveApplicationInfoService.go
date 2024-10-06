@@ -3,7 +3,7 @@ package activeapplicationinfo
 /*
 #cgo CFLAGS: -x objective-c -I../interface
 #cgo LDFLAGS: -framework Cocoa
-#import "./../interface/ActiveApplicationInfo.h"
+#import "./../interface/ActiveApplicationInfoInterface.h"
 */
 import "C"
 import "fmt"
