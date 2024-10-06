@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	activeapplicationinfo "josa/functions/C/ActiveApplicationInfo/togo"
+	activeapplicationinfo "josa/functions/c/ActiveApplicationInfo/service"
 )
 
 func main() {
