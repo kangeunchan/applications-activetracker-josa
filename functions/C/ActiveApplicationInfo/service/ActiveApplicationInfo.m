@@ -12,7 +12,7 @@
 + (NSString *)runningTime {
     NSWorkspace *workspace = [NSWorkspace sharedWorkspace];
     NSRunningApplication *activeApp = [workspace frontmostApplication];
-    
+
     NSDate *launchDate = [activeApp launchDate];
     if (launchDate == nil) {
         return @"Unknown";
@@ -20,11 +20,11 @@
 
     NSDate *currentDate = [NSDate date];
     NSTimeInterval runningTime = [currentDate timeIntervalSinceDate:launchDate];
-    
+
     NSDateComponentsFormatter *formatter = [[NSDateComponentsFormatter alloc] init];
     formatter.unitsStyle = NSDateComponentsFormatterUnitsStyleFull;
     formatter.allowedUnits = NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond;
-    
+
     return [formatter stringFromTimeInterval:runningTime];
 }
 

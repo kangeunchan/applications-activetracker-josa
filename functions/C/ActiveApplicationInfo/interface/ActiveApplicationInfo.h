@@ -16,7 +16,7 @@
 extern "C" {
 #endif
 
-char* getActiveAppName(void);
+const char* getActiveAppName(void);
 const char* getActiveAppRunningTime(void);
 
 #ifdef __cplusplus
